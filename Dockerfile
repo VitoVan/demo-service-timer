@@ -1,3 +1,3 @@
-FROM alpine:3.10
-COPY server.sh .
-ENTRYPOINT ["sh", "server.sh"]
+FROM python:3
+COPY server.py .
+ENTRYPOINT ["python", "server.py"]
